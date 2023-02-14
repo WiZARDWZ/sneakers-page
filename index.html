@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <!-- Start NavBar -->
+    <nav class="navbar navbar-expand-md p-4">
+
+      <div class="container">
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mynavbar"
+      >
+      
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <a class="navbar-brand" href="javascript:void(0)">sneakers</a>
+        
+
+        <div class="d-flex nav-Icons d-md-none  d-lg-none d-xl-none d-xxl-none  ">
+          <img
+            class="me-4"
+            style="fill: white"
+            src="./images/icon-cart.svg"
+            alt=""
+            srcset=""
+          />
+          <img src="./images/image-avatar.png" alt="" srcset="" />
+        </div>
+        
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex nav-Icons d-none d-sm-block  d-sm-none d-md-block ">
+            <a href="#" id="amin" class="checkout w-100"><img 
+              class="me-4"
+              style="fill: white"
+              src="./images/icon-cart.svg"
+              alt=""
+              srcset=""
+            /></a>
+          <div class="cart d-none" >
+            <p>Cart</p>
+            <div class="line"></div>
+            <div class="product d-flex">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="product-picture">
+              <p>Fall Limited Edition Sneakers <br>125$</p>
+              <img src="./images/icon-delete.svg" alt="Delete">
+
+            </div>
+            <div class="justify-content-center d-flex">
+              <button type="button" class= " btn btn-warning "
+              style="--bs-btn-padding-y: .55rem; --bs-btn-padding-x: 5rem; --bs-btn-font-size: .95rem;font-weight: 700;">
+              Checkout
+              </button>
+            </div>
+          </div>
+            <img src="./images/image-avatar.png" alt="" srcset="" />
+
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- End Navbar -->
+    <!-- Start Content -->
+    <section>
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-5 slider">
+            <div
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+              class="swiper mySwiper2"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/image-product-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/image-product-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/image-product-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/image-product-4.jpg" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/image-product-1-thumbnail.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/image-product-2-thumbnail.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/image-product-3-thumbnail.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/image-product-4-thumbnail.jpg" />
+                </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- Swiper JS -->
+            <script>
+              var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+              });
+              var swiper2 = new Swiper(".mySwiper2", {
+                loop: true,
+                spaceBetween: 10,
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                  swiper: swiper,
+                },
+              });
+            </script>
+
+                <div class="col-md-5 content-Text">
+                  <h6 class="text-warning">SNEAKER COMPANY</h6>
+                  <h2>Fall Limited Edition Sneakers</h2>
+                  <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi maxime modi cum, tempora a, quo ad ipsam quis doloremque quos! Quasi eligendi ullam minima eos fugiat molestiae deleniti quam?</p>
+                  <div class="mb-5">
+                   <div class="price">
+                    <span>$125.00</span>
+                    <span>50%</span>
+                    
+
+                   </div>
+                   <div class="d-block discont">250%</div>
+                    <div class="purches-btn">
+                      <div class="me-2">                      
+                        <span class="hexa-icon"><a href="" class="text-decoration-none">&#x268A;</a></span>
+                        <input type="number" name="Numbers" id="">
+                        <span class="hexa-icon"><a href="" class="text-decoration-none">&#x271A;</a></span>
+                      
+                      </div class="mt-3" >
+                      <button type="button" class="btn btn-warning"
+                      style="--bs-btn-padding-y: .75rem; --bs-btn-padding-x: 2.0rem; --bs-btn-font-size: .95rem;font-weight: 700;">
+                      Add to cart
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+                
+
+          </div>
+          
+        </div>
+        
+      </div>
+
+    </section>
+    <div class="attribution mt-5">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="http://mbaghshomali.ir/">Mohammad Baghshomali</a>.
+    </div>
+    <!-- End Content -->
+  </body>
+</html>

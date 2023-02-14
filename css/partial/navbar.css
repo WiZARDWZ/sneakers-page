@@ -1,0 +1,64 @@
+.navbar {
+  color: black !important;
+  background-color: white !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.041);
+}
+.nav-Icons > img:nth-child(1) {
+  width: 25px;
+  height: 25px;
+  margin-top: 15px;
+  color: white;
+  fill: white;
+}
+.nav-Icons > img {
+  width: 55px;
+  color: white;
+  fill: white;
+}
+a.navbar-brand {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+}
+.nav-Icons {
+  position: relative;
+  height: 100%;
+}
+.cart {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 360px;
+  padding: 10px;
+  border: 1px solid rgba(243, 242, 242, 0.61);
+  border-radius: 5px;
+  top: 70px;
+  right: 10px;
+}
+.line {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+}
+.product {
+  margin: 9px;
+  gap: 13px;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.product > img:nth-of-type(1) {
+  width: 45px;
+  border-radius: 7px;
+}
+.product > img:nth-of-type(2) {
+  width: 14px;
+  height: 17px;
+  margin-left: 30px;
+}
+.product > p {
+  margin: 0;
+}
+div.nav-Icons > a:hover + div.cart {
+  display: block !important;
+}
+.checkout {
+  height: 100%;
+}

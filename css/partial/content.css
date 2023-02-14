@@ -1,0 +1,171 @@
+/* Start Swiper slider styles */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background: #000;
+  color: #000;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 95%;
+  margin: 8px 5px 0px 0px;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+/* End Swiper slider styles */
+.slider {
+  padding-top: 70px;
+}
+
+div.content-Text {
+  text-align: center;
+  padding-top: 120px;
+  padding-left: 20px;
+}
+
+div.content-Text > p {
+  text-align: start;
+}
+
+div.content-Text > h2 {
+  text-align: start;
+}
+
+div.purches-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.purches-btn > div {
+  background-color: rgb(240, 240, 240);
+  width: 150px;
+  border-radius: 10px;
+}
+
+div.purches-btn > div > input {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+}
+
+div.price {
+  display: flex;
+}
+
+div.price > span:nth-child(1) {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+div.price > span:nth-child(2) {
+  background: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  font-weight: 500;
+  width: 40px;
+  text-align: center;
+  padding-top: 2px;
+  height: 30px;
+  border-radius: 7px;
+  /* margin-bottom: 30px; */
+}
+
+div.discont {
+  text-align: left;
+  color: hsl(240, 1%, 55%);
+  margin-bottom: 25px;
+  text-decoration: line-through;
+  margin-top: -6px;
+}
+
+@media screen and (max-width: 993px) and (min-width: 769px) {
+  div.purches-btn > div {
+    background-color: rgb(240, 240, 240);
+    width: 130px;
+    border-radius: 10px;
+  }
+
+  div.purches-btn > div > input {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(240, 240, 240);
+    border: none;
+  }
+
+  div.purches-btn > button {
+    font-weight: 700;
+    --bs-btn-padding-y: 0.65rem;
+    --bs-btn-padding-x: 1.5rem !important;
+    --bs-btn-font-size: 0.8rem !important;
+  }
+}
